@@ -1,0 +1,517 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>健身show-首页</title>
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css"/>
+    <!--[if lt IE 9]>
+    <script src="js/html5shiv.min.js"></script>
+    <script src="js/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body>
+
+<div class="header">
+    <!--响应式导航条-->
+    <div class="navbar navbar-default">
+        <div class="container">
+            <!--导航条头部，包含商标+汉堡包-->
+            <div class="navbar-header">
+                <a class="navbar-brand" href="#">
+                    <span class="jianshen">健身show</span><br>
+                    <span>&nbsp;&nbsp;--您的专业私人教练</span>
+                </a>
+                <a data-toggle="collapse" href="#my-menu" class="navbar-toggle" >
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </a>
+            </div>
+            <!--导航条折叠部分，包含菜单、表单、文字...-->
+            <div id="my-menu" class="navbar-collapse collapse">
+                <ul class="nav navbar-nav">
+                    <li><a href="homepage.html">首页</a></li>
+                    <li><a href="class.html">课堂</a></li>
+                    <li class="active"><a href="shopping.html">购物</a></li>
+                    <li><a href="food.html">健康餐</a></li>
+                    <li><a href="#">音乐库</a></li>
+                </ul>
+
+                <a class="navbar-link navbar-text navbar-right" href="#">注册</a>
+                <span class="navbar-text navbar-right">|</span>
+                <a class="navbar-link navbar-text navbar-right" href="#">登陆</a>
+                <!--在导航条中添加一个搜索表单-->
+                <form action="#" class="navbar-form navbar-right">
+                    <div class="form-group has-feedback">
+                        <label class="sr-only" for="kw">请输入搜索关键字</label>
+                        <input class="form-control" id="kw" placeholder="请输入搜索关键字">
+                        <span class="glyphicon glyphicon-search form-control-feedback"></span>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <!--轮播广告图-->
+    <div class="container-fluid advert">
+        <div id="lunbo" class="carousel slide" data-ride="carousel" data-interval="2000">
+            <div class="carousel-inner">
+                <div class="item active">
+                    <img src="images/banner1.jpg">
+                    <div class="carousel-caption">
+                        <h1>keep</h1>
+                        <h3>规范你的训练过程</h3>
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="images/banner22.jpg">
+                    <div class="carousel-caption">
+                        <h1>Change</h1>
+                        <h3>分享汗水后你的性感</h3>
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="images/banner3.jpg">
+                    <div class="carousel-caption">
+                        <h1>Time</h1>
+                        <h3>全程记录你的健身数据</h3>
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="images/banner4.jpg">
+                    <div class="carousel-caption">
+                        <h1>Passion</h1>
+                        <h3>量体裁衣，让你爱上健身</h3>
+                    </div>
+                </div>
+            </div>
+            <a data-slide="prev" class="carousel-control left" href="#lunbo">
+                <span class="glyphicon glyphicon-chevron-left"></span>
+            </a>
+            <a data-slide="next" class="carousel-control right" href="#lunbo">
+                <span class="glyphicon glyphicon-chevron-right"></span>
+            </a>
+            <ul class="carousel-indicators">
+                <li data-slide-to="0" data-target="#lunbo" class="active"></li>
+                <li data-slide-to="1" data-target="#lunbo"></li>
+                <li data-slide-to="2" data-target="#lunbo"></li>
+                <li data-slide-to="3" data-target="#lunbo"></li>
+            </ul>
+        </div>
+    </div>
+
+</div>
+
+<div class="main">
+    <div class="container">
+        <div class="about-top grid-1">
+            <div class="row">
+                <div class="col-md-3 about-left">
+                <figure class="effect-bubba">
+                    <img src="images/adv3.jpg" class="img-responsive" alt=""/>
+                    <figcaption>
+                        <h2>运动装备</h2>
+                        <p>遇见更好的自己</p>
+                    </figcaption>
+                </figure>
+            </div>
+                <div class="col-md-3 about-left">
+                <figure class="effect-bubba">
+                    <img src="images/adv2.jpg" class="img-responsive" alt=""/>
+                    <figcaption>
+                        <h2>女子鞋服</h2>
+                        <p>遇见更好的自己</p>
+                    </figcaption>
+                </figure>
+            </div>
+                <div class="col-md-3 about-left">
+                <figure class="effect-bubba">
+                    <img src="images/adv1.jpg" class="img-responsive" alt=""/>
+                    <figcaption>
+                        <h2>男子鞋服</h2>
+                        <p>遇见更好的自己</p>
+                    </figcaption>
+                </figure>
+            </div>
+                <div class="col-md-3 about-left">
+                <figure class="effect-bubba">
+                    <img src="images/adv4.jpg" class="img-responsive" alt=""/>
+                    <figcaption>
+                        <h2>营养补计</h2>
+                        <p>遇见更好的自己</p>
+                    </figcaption>
+                </figure>
+            </div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <h2>show女装新品 轻盈舒适运动体验</h2>
+        <div class="row">
+            <div class="col-md-3 col-sm-6">
+                <a class="thumbnail">
+                    <img src="images/adv1.jpg">
+
+                    <div class="caption">
+                        <h4>强聚拢运动内衣</h4>
+                        <p class="price-color"><b>￥149</b></p>
+                        <button type="button" class="btn btn-default" href="#">添加到购物车</button>
+                    </div>
+                </a>
+            </div>
+            <div class="col-md-3 col-sm-6">
+                <a class="thumbnail">
+                    <img src="images/adv2.jpg">
+
+                    <div class="caption">
+                        <h4>吸湿速干舒爽T恤</h4>
+                        <p class="price-color"><b>￥149</b></p>
+                        <button type="button" class="btn btn-default" href="#">添加到购物车</button>
+                    </div>
+                </a>
+            </div>
+            <div class="col-md-3 col-sm-6">
+                <a class="thumbnail">
+                    <img src="images/adv3.jpg">
+
+                    <div class="caption">
+                        <h4>完美腿部线条</h4>
+                        <p class="price-color"><b>￥149</b></p>
+                        <button type="button" class="btn btn-default" href="#">添加到购物车</button>
+                    </div>
+                </a>
+            </div>
+            <div class="col-md-3 col-sm-6">
+                <a class="thumbnail">
+                    <img src="images/adv4.jpg">
+                    <div class="caption">
+                        <h4>活力舒适橙</h4>
+                        <p class="price-color"><b>￥149</b></p>
+                        <button type="button" class="btn btn-default" href="#">添加到购物车</button>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <h2>show男装新品 畅想酷爽运动体验</h2>
+        <div class="row">
+            <div class="col-md-3 col-sm-6">
+                <a class="thumbnail">
+                    <img src="images/adv1.jpg">
+
+                    <div class="caption">
+                        <h4>强聚拢运动内衣</h4>
+                        <p class="price-color"><b>￥149</b></p>
+                        <button type="button" class="btn btn-default" href="#">添加到购物车</button>
+                    </div>
+                </a>
+            </div>
+            <div class="col-md-3 col-sm-6">
+                <a class="thumbnail">
+                    <img src="images/adv2.jpg">
+
+                    <div class="caption">
+                        <h4>吸湿速干舒爽T恤</h4>
+                        <p class="price-color"><b>￥149</b></p>
+                        <button type="button" class="btn btn-default" href="#">添加到购物车</button>
+                    </div>
+                </a>
+            </div>
+            <div class="col-md-3 col-sm-6">
+                <a class="thumbnail">
+                    <img src="images/adv3.jpg">
+
+                    <div class="caption">
+                        <h4>完美腿部线条</h4>
+                        <p class="price-color"><b>￥149</b></p>
+                        <button type="button" class="btn btn-default" href="#">添加到购物车</button>
+                    </div>
+                </a>
+            </div>
+            <div class="col-md-3 col-sm-6">
+                <a class="thumbnail">
+                    <img src="images/adv4.jpg">
+                    <div class="caption">
+                        <h4>活力舒适橙</h4>
+                        <p class="price-color"><b>￥149</b></p>
+                        <button type="button" class="btn btn-default" href="#">添加到购物车</button>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <h2>show跑步装备，让跑步的你更松</h2>
+        <div class="row">
+            <div class="col-md-3 col-sm-6">
+                <a class="thumbnail">
+                    <img src="images/adv1.jpg">
+
+                    <div class="caption">
+                        <h4>强聚拢运动内衣</h4>
+                        <p class="price-color"><b>￥149</b></p>
+                        <button type="button" class="btn btn-default" href="#">添加到购物车</button>
+                    </div>
+                </a>
+            </div>
+            <div class="col-md-3 col-sm-6">
+                <a class="thumbnail">
+                    <img src="images/adv2.jpg">
+
+                    <div class="caption">
+                        <h4>吸湿速干舒爽T恤</h4>
+                        <p class="price-color"><b>￥149</b></p>
+                        <button type="button" class="btn btn-default" href="#">添加到购物车</button>
+                    </div>
+                </a>
+            </div>
+            <div class="col-md-3 col-sm-6">
+                <a class="thumbnail">
+                    <img src="images/adv3.jpg">
+
+                    <div class="caption">
+                        <h4>完美腿部线条</h4>
+                        <p class="price-color"><b>￥149</b></p>
+                        <button type="button" class="btn btn-default" href="#">添加到购物车</button>
+                    </div>
+                </a>
+            </div>
+            <div class="col-md-3 col-sm-6">
+                <a class="thumbnail">
+                    <img src="images/adv4.jpg">
+                    <div class="caption">
+                        <h4>活力舒适橙</h4>
+                        <p class="price-color"><b>￥149</b></p>
+                        <button type="button" class="btn btn-default" href="#">添加到购物车</button>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <h2>lorna Jane你需要一件专业的运动衣</h2>
+        <div class="row">
+            <div class="col-md-3 col-sm-6">
+                <a class="thumbnail">
+                    <img src="images/adv1.jpg">
+
+                    <div class="caption">
+                        <h4>强聚拢运动内衣</h4>
+                        <p class="price-color"><b>￥149</b></p>
+                        <button type="button" class="btn btn-default" href="#">添加到购物车</button>
+                    </div>
+                </a>
+            </div>
+            <div class="col-md-3 col-sm-6">
+                <a class="thumbnail">
+                    <img src="images/adv2.jpg">
+
+                    <div class="caption">
+                        <h4>吸湿速干舒爽T恤</h4>
+                        <p class="price-color"><b>￥149</b></p>
+                        <button type="button" class="btn btn-default" href="#">添加到购物车</button>
+                    </div>
+                </a>
+            </div>
+            <div class="col-md-3 col-sm-6">
+                <a class="thumbnail">
+                    <img src="images/adv3.jpg">
+
+                    <div class="caption">
+                        <h4>完美腿部线条</h4>
+                        <p class="price-color"><b>￥149</b></p>
+                        <button type="button" class="btn btn-default" href="#">添加到购物车</button>
+                    </div>
+                </a>
+            </div>
+            <div class="col-md-3 col-sm-6">
+                <a class="thumbnail">
+                    <img src="images/adv4.jpg">
+                    <div class="caption">
+                        <h4>活力舒适橙</h4>
+                        <p class="price-color"><b>￥149</b></p>
+                        <button type="button" class="btn btn-default" href="#">添加到购物车</button>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <h2>Beats&Monster高颜值运动耳机</h2>
+        <div class="row">
+            <div class="col-md-3 col-sm-6">
+                <a class="thumbnail">
+                    <img src="images/adv1.jpg">
+
+                    <div class="caption">
+                        <h4>强聚拢运动内衣</h4>
+                        <p class="price-color"><b>￥149</b></p>
+                        <button type="button" class="btn btn-default" href="#">添加到购物车</button>
+                    </div>
+                </a>
+            </div>
+            <div class="col-md-3 col-sm-6">
+                <a class="thumbnail">
+                    <img src="images/adv2.jpg">
+
+                    <div class="caption">
+                        <h4>吸湿速干舒爽T恤</h4>
+                        <p>￥99</p>
+                        <button type="button" class="btn btn-default" href="#">添加到购物车</button>
+                    </div>
+                </a>
+            </div>
+            <div class="col-md-3 col-sm-6">
+                <a class="thumbnail">
+                    <img src="images/adv3.jpg">
+
+                    <div class="caption">
+                        <h4>完美腿部线条</h4>
+                        <p class="price-color"><b>￥149</b></p>
+                        <button type="button" class="btn btn-default" href="#">添加到购物车</button>
+                    </div>
+                </a>
+            </div>
+            <div class="col-md-3 col-sm-6">
+                <a class="thumbnail">
+                    <img src="images/adv4.jpg">
+                    <div class="caption">
+                        <h4>活力舒适橙</h4>
+                        <p class="price-color"><b>￥149</b></p>
+                        <button type="button" class="btn btn-default" href="#">添加到购物车</button>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <h2>keep瑜伽，爱上柔软的自己</h2>
+        <div class="row">
+            <div class="col-md-3 col-sm-6">
+                <a class="thumbnail">
+                    <img src="images/adv1.jpg">
+
+                    <div class="caption">
+                        <h4>强聚拢运动内衣</h4>
+                        <p>￥149</p>
+                        <button type="button" class="btn btn-default" href="#">添加到购物车</button>
+                    </div>
+                </a>
+            </div>
+            <div class="col-md-3 col-sm-6">
+                <a class="thumbnail">
+                    <img src="images/adv2.jpg">
+
+                    <div class="caption">
+                        <h4>吸湿速干舒爽T恤</h4>
+                        <p class="price-color"><b>￥149</b></p>
+                        <button type="button" class="btn btn-default" href="#">添加到购物车</button>
+                    </div>
+                </a>
+            </div>
+            <div class="col-md-3 col-sm-6">
+                <a class="thumbnail">
+                    <img src="images/adv3.jpg">
+
+                    <div class="caption">
+                        <h4>完美腿部线条</h4>
+                        <p class="price-color"><b>￥149</b></p>
+                        <button type="button" class="btn btn-default" href="#">添加到购物车</button>
+                    </div>
+                </a>
+            </div>
+            <div class="col-md-3 col-sm-6">
+                <a class="thumbnail">
+                    <img src="images/adv4.jpg">
+                    <div class="caption">
+                        <h4>活力舒适橙</h4>
+                        <p class="price-color"><b>￥149</b></p>
+                        <button type="button" class="btn btn-default" href="#">添加到购物车</button>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <h2>show器械，打造家庭健身房</h2>
+        <div class="row">
+            <div class="col-md-3 col-sm-6">
+                <a class="thumbnail">
+                    <img src="images/adv1.jpg">
+
+                    <div class="caption">
+                        <h4>强聚拢运动内衣</h4>
+                        <p class="price-color"><b>￥149</b></p>
+                        <button type="button" class="btn btn-default" href="#">添加到购物车</button>
+                    </div>
+                </a>
+            </div>
+            <div class="col-md-3 col-sm-6">
+                <a class="thumbnail">
+                    <img src="images/adv2.jpg">
+
+                    <div class="caption">
+                        <h4>吸湿速干舒爽T恤</h4>
+                        <p class="price-color"><b>￥149</b></p>
+                        <button type="button" class="btn btn-default" href="#">添加到购物车</button>
+                    </div>
+                </a>
+            </div>
+            <div class="col-md-3 col-sm-6">
+                <a class="thumbnail">
+                    <img src="images/adv3.jpg">
+
+                    <div class="caption">
+                        <h4>完美腿部线条</h4>
+                        <p class="price-color"><b>￥149</b></p>
+                        <button type="button" class="btn btn-default" href="#">添加到购物车</button>
+                    </div>
+                </a>
+            </div>
+            <div class="col-md-3 col-sm-6">
+                <a class="thumbnail">
+                    <img src="images/adv4.jpg">
+                    <div class="caption">
+                        <h4>活力舒适橙</h4>
+                        <p class="price-color"><b>￥149</b></p>
+                        <button type="button" class="btn btn-default" href="#">添加到购物车</button>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="footer">
+    <div class="container-fluid">
+        <a href="#">服务条款|</a>
+        <a href="#">隐私条款|</a>
+        <a href="#">社区规范|</a>
+        <a href="#">社区公约|</a>
+        <a href="#">加入我们|</a>
+        <a href="#">联系我们|</a>
+        <a href="#"><img src="images/twitterh.png" alt=""/></a>
+        <a href="#"><img src="images/vimeoh.png" alt=""/></a>
+        <a href="#"><img src="images/dribbbleh.png" alt=""/></a>
+        <a href="#"><img src="images/gplush.png" alt=""/></a>
+    </div>
+
+</div>
+<script src="js/jquery-1.11.3.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/show.js"></script>
+<script>
+    (function () {
+        var s = document.createElement("script");
+        s.onload = function () {
+            bootlint.showLintReportForCurrentDocument([]);
+        };
+        s.src = "js/bootlint.js";
+        document.body.appendChild(s)
+    })();
+</script>
+</body>
+</html>

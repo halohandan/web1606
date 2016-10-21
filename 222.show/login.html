@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=GBK">
+
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <title>个人注册</title>
+    <link rel="icon" href="images/favicon.ico">
+    <link charset="utf-8" rel="stylesheet" href="css/login.css">
+    <style>
+
+    </style>
+</head>
+<body>
+<div class="w">
+    <div id="logo">
+        <a href="javascript:return false;" class="logo">
+            <h1>健身show</h1>
+        </a>
+        <div class="logo-title">欢 迎 注 册</div>
+    </div>
+</div>
+<div class="video-frame container" poster="videos/home-hero-video-desktop-still.jpg">
+    <img src="images/tupian.jpg" class="" alt=""/>
+</div>
+<div class="content reg-container">
+    <form class="form form-horizontal" action="#">
+        <div class="form-group">
+            <label class="col-md-2 control-label" for="username">用户名:</label>
+            <div class="col-md-5">
+                <input id="username" type="text" class="form-control" autofocus placeholder="请输入用户名" required pattern="^[a-zA-Z0-9]{8,16}$">
+            </div>
+            <label id="usernameTip" class="col-md-5 hide control-default">请输入8至16位的英文或数字.</label>
+        </div>
+        <div class="form-group">
+            <label class="col-md-2 control-label" for="password">密码:</label>
+            <div class="col-md-5">
+                <input id="password" type="password" class="form-control" placeholder="请输入密码" required pattern="^[0-9]{6,12}$">
+            </div>
+            <label id="passwordTip" class="col-md-5 hide control-default">请输入6至12位的数字.</label>
+        </div>
+        <div class="form-group">
+            <label class="col-md-2 control-label" for="password">重复密码:</label>
+            <div class="col-md-5">
+                <input id="passwordR" type="password" class="form-control" placeholder="请输入相同密码" required pattern="^[0-9]{6,12}$">
+            </div>
+            <label id="passwordTipR" class="col-md-5 hide control-default">请输入6至12位的数字.</label>
+        </div>
+        <div class="form-group">
+            <label class="col-md-2 control-label" for="email">电子邮件:</label>
+            <div class="col-md-5">
+                <input id="email" type="email" class="form-control" placeholder="请输入电子邮件" required>
+            </div>
+            <label id="emailTip" class="col-md-5 hide control-default">请输入你的电子邮件地址.</label>
+        </div>
+        <div class="form-group">
+            <label class="col-md-2 control-label" for="home">个人主页:</label>
+            <div class="col-md-5">
+                <input id="home" type="url" class="form-control" placeholder="请输入个人主页">
+            </div>
+            <label id="homeTip" class="col-md-5 hide control-default">请输入你的个人主页(该项可忽略).</label>
+        </div>
+        <div class="form-group">
+            <label class="col-md-2 control-label"></label>
+            <div class="col-md-5">
+                <input type="submit" value="注册" class="btn btn-success btn-block">
+            </div>
+        </div>
+    </form>
+</div>
+<script>
+    var username = document.getElementById("username");
+    var usernameTip = document.getElementById("usernameTip");
+    username.onfocus = function(){
+        usernameTip.className = "col-md-5 show control-default";
+        usernameTip.innerHTML = "请输入8至16位的英文或数字.";
+    }
+    username.onblur = function(){
+        if(username.validity.valid){
+            usernameTip.className = "col-md-5 show control-success";
+            usernameTip.innerHTML = "用户名输入正确";
+        }else if(username.validity.valueMissing){
+            usernameTip.className = "col-md-5 show control-error";
+            usernameTip.innerHTML = "用户名不能为空";
+        }else if(username.validity.patternMismatch){
+            usernameTip.className = "col-md-5 show control-error";
+            usernameTip.innerHTML = "用户名输入不正确";
+        }
+    }
+
+    var password = document.getElementById("password");
+    var passwordTip = document.getElementById("passwordTip");
+    password.onfocus = function(){
+        passwordTip.className = "col-md-5 show control-default";
+        passwordTip.innerHTML = "请输入6至12位的数字.";
+    }
+    password.onblur = function(){
+        if(password.validity.valid){
+            passwordTip.className = "col-md-5 show control-success";
+            passwordTip.innerHTML = "密码输入正确";
+        }else if(password.validity.valueMissing){
+            passwordTip.className = "col-md-5 show control-error";
+            passwordTip.innerHTML = "密码不能为空";
+        }else if(password.validity.patternMismatch){
+            passwordTip.className = "col-md-5 show control-error";
+            passwordTip.innerHTML = "密码输入不正确";
+        }
+    }
+
+    var options = {
+        elem : document.getElementById("password"),
+        elemTip : document.getElementById("passwordTip"),
+        msg : document.getElementById("passwordTip").innerHTML,
+        elemText : "密码"
+    }
+    validityForm(options);
+</script>
+<div class="w">
+    <div id="footer-2013">
+        <div class="links">
+            <a rel="nofollow" target="_blank" href="javascript:return false;">
+                关于我们
+            </a>
+            |
+            <a rel="nofollow" target="_blank" href="javascript:return false;">
+                联系我们
+            </a>
+            |
+            <a rel="nofollow" target="_blank" href="javascript:return false;">
+                人才招聘
+            </a>
+            |
+            <a rel="nofollow" target="_blank" href="javascript:return false;">
+                商家入驻
+            </a>
+            |
+            <a rel="nofollow" target="_blank" href="javascript:return false;">
+                广告服务
+            </a>
+            |
+            <a rel="nofollow" target="_blank" href="javascript:return false;">
+                手机京东
+            </a>
+            |
+            <a target="_blank" href="javascript:return false;">
+                友情链接
+            </a>
+            |
+            <a target="_blank" href="javascript:return false;">
+                销售联盟
+            </a>
+            |
+            <a href="javascript:return false;" target="_blank">
+                京东社区
+            </a>
+            |
+            <a href="javascript:return false;" target="_blank">
+                京东公益
+            </a>
+            |
+            <a target="_blank" href="javascript:return false;" clstag="pageclick|keycount|20150112ABD|9">English Site</a>
+        </div>
+        <div class="copyright">
+            Copyright&nbsp;&#169;&nbsp;2004-2016&nbsp;&nbsp;京东JD.com&nbsp;版权所有
+        </div>
+    </div>
+</div>
+</body>
+</html>

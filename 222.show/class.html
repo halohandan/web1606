@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap 101 Template</title>
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css"/>
+    <link rel="stylesheet" href="css/carousel.css"/>
+    <!--[if lt IE 9]>
+    <script src="js/html5shiv.min.js"></script>
+    <script src="js/respond.min.js"></script>
+<![endif]-->
+</head>
+<body>
+<div class="header">
+    <!-- 导航条-->
+    <div class="navbar navbar-default">
+        <div class="container">
+            <!--导航条头部，包含商标+汉堡包-->
+            <div class="navbar-header">
+                <a class="navbar-brand" href="#">
+                    <span class="jianshen">健身show</span>
+                </a>
+                <a data-toggle="collapse" href="#my-menu" class="navbar-toggle" >
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </a>
+            </div>
+            <!--导航条折叠部分，包含菜单、表单、文字...-->
+            <div id="my-menu" class="navbar-collapse collapse">
+                <ul class="nav navbar-nav">
+                    <li class="active"><a href="homepage.html">首页</a></li>
+                    <li><a href="class.html">课堂</a></li>
+                    <li><a href="shopping.html">购物</a></li>
+                    <li><a href="food.html">健康餐</a></li>
+                    <li><a href="#">音乐库</a></li>
+                </ul>
+
+                <a class="navbar-link navbar-text navbar-right" href="#">注册</a>
+                <span class="navbar-text navbar-right">|</span>
+                <a class="navbar-link navbar-text navbar-right" href="#">登陆</a>
+                <!--在导航条中添加一个搜索表单-->
+                <form action="#" class="navbar-form navbar-right">
+                    <div class="form-group has-feedback">
+                        <label class="sr-only" for="kw">请输入搜索关键字</label>
+                        <input class="form-control" id="kw" placeholder="请输入搜索关键字">
+                        <span class="glyphicon glyphicon-search form-control-feedback"></span>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <!--轮播效果juyery -->
+    <div class="container">
+        <div class = "caroursel poster-main" data-setting = '{
+	        "width":1000,
+	        "height":270,
+	        "posterWidth":640,
+	        "posterHeight":270,
+	        "scale":0.8,
+	        "dealy":"2000",
+	        "algin":"middle"
+	    }'>
+            <ul class = "poster-list">
+                <li class = "poster-item"><img src="images/l1.jpg" width = "100%" height="100%"></li>
+                <li class = "poster-item"><img src="images/l2.jpg" width = "100%" height="100%"></li>
+                <li class = "poster-item"><img src="images/l3.jpg" width = "100%" height="100%"></li>
+                <li class = "poster-item"><img src="images/l4.jpg" width = "100%" height="100%"></li>
+                <li class = "poster-item"><img src="images/l1.jpg" width = "100%" height="100%"></li>
+                <li class = "poster-item"><img src="images/l2.jpg"  width = "100%" height="100%"></li>
+                <li class = "poster-item"><img src="images/l3.jpg"  width = "100%" height="100%"></li>
+            </ul>
+            <div class = "poster-btn poster-prev-btn"></div>
+            <div class = "poster-btn poster-next-btn"></div>
+        </div>
+
+        <script src="http://libs.baidu.com/jquery/1.11.3/jquery.min.js"></script>
+        <script src="js/jquery.carousel.js"></script>
+        <script>
+            Caroursel.init($('.caroursel'))
+        </script>
+
+    </div>
+    </div>
+
+<div class="main">
+    <div class="container trainer">
+        <div class="weight-title">
+            <h4 class="text-center">减脂</h4>
+            <p class="white-line"></p>
+        </div>
+        <div class="row">
+            <div class="img-ceng col-md-3">
+                <img src="images/media5.jpg" class="img-responsive">
+                <a href="#" class="shadow"><span>HIIT适应性训练</span></a>
+            </div>
+            <div class="img-ceng col-md-3">
+                <img src="images/media6.jpg" class="img-responsive">
+                <a href="#" class="shadow"><span>HIIT燃脂初级</span></a>
+            </div>
+            <div class="img-ceng col-md-3">
+                <img src="images/media1.jpg" class="img-responsive">
+                <a href="#" class="shadow"><span>HIIT燃脂进阶</span></a>
+            </div>
+            <div class="img-ceng col-md-3">
+                <img src="images/media2.jpg" class="img-responsive">
+                <a href="#" class="shadow"><span>HIIT燃脂强化</span></a>
+            </div>
+        </div>
+        <div class="row">
+            <div class="img-ceng col-md-3">
+                <img src="images/media7.jpg" class="img-responsive">
+                <a href="#" class="shadow"><span>2分钟碎片减脂练习</span></a>
+            </div>
+            <div class="img-ceng col-md-3">
+                <img src="images/media8.jpg" class="img-responsive">
+                <a href="#" class="shadow"><span>Tabata4分钟强化燃脂</span></a>
+            </div>
+            <div class="img-ceng col-md-3">
+                <img src="images/media3.jpg" class="img-responsive">
+                <a href="#" class="shadow"><span>Tabata4分钟进阶燃脂</span></a>
+            </div>
+            <div class="img-ceng col-md-3">
+                <img src="images/media4.jpg" class="img-responsive">
+                <a href="#" class="shadow"><span>健身房入门</span></a>
+            </div>
+        </div>
+    </div>
+    <div class="container trainer">
+        <div class="weight-title">
+            <h4 class="text-center">塑形</h4>
+            <p class="white-line"></p>
+        </div>
+        <div class="row">
+            <div class="img-ceng col-md-3">
+                <img src="images/media5.jpg" class="img-responsive">
+                <a href="#" class="shadow"><span>五维腹肌训练计划</span></a>
+            </div>
+            <div class="img-ceng col-md-3">
+                <img src="images/media6.jpg" class="img-responsive">
+                <a href="#" class="shadow"><span>模特身材养成计划</span></a>
+            </div>
+            <div class="img-ceng col-md-3">
+                <img src="images/media1.jpg" class="img-responsive">
+                <a href="#" class="shadow"><span>健美身材养成计划</span></a>
+            </div>
+            <div class="img-ceng col-md-3">
+                <img src="images/media2.jpg" class="img-responsive">
+                <a href="#" class="shadow"><span>健美身材增肌计划</span></a>
+            </div>
+        </div>
+        <div class="row">
+            <div class="img-ceng col-md-3">
+                <img src="images/media7.jpg" class="img-responsive">
+                <a href="#" class="shadow"><span>弹力带塑形</span></a>
+            </div>
+            <div class="img-ceng col-md-3">
+                <img src="images/media8.jpg" class="img-responsive">
+                <a href="#" class="shadow"><span>家庭哑铃塑形</span></a>
+            </div>
+            <div class="img-ceng col-md-3">
+                <img src="images/media3.jpg" class="img-responsive">
+                <a href="#" class="shadow"><span>Tough Mudder备战训练</span></a>
+            </div>
+            <div class="img-ceng col-md-3">
+                <img src="images/media4.jpg" class="img-responsive">
+                <a href="#" class="shadow"><span>女神马甲线</span></a>
+            </div>
+        </div>
+        <div class="row">
+            <div class="img-ceng col-md-3">
+                <img src="images/media7.jpg" class="img-responsive">
+                <a href="#" class="shadow"><span>驼背改善</span></a>
+            </div>
+            <div class="img-ceng col-md-3">
+                <img src="images/media8.jpg" class="img-responsive">
+                <a href="#" class="shadow"><span>腿部塑形</span></a>
+            </div>
+            <div class="img-ceng col-md-3">
+                <img src="images/media3.jpg" class="img-responsive">
+                <a href="#" class="shadow"><span>哑铃进阶循环训练</span></a>
+            </div>
+            <div class="img-ceng col-md-3">
+                <img src="images/media4.jpg" class="img-responsive">
+                <a href="#" class="shadow"><span>女神马甲线</span></a>
+            </div>
+        </div>
+    </div>
+    <div class="container trainer">
+        <div class="weight-title">
+            <h4 class="text-center">放松</h4>
+            <p class="white-line"></p>
+        </div>
+        <div class="row">
+            <div class="img-ceng col-md-3">
+                <img src="images/media5.jpg" class="img-responsive">
+                <a href="#" class="shadow"><span>全身拉伸</span></a>
+            </div>
+            <div class="img-ceng col-md-3">
+                <img src="images/media6.jpg" class="img-responsive">
+                <a href="#" class="shadow"><span>睡前拉伸</span></a>
+            </div>
+            <div class="img-ceng col-md-3">
+                <img src="images/media1.jpg" class="img-responsive">
+                <a href="#" class="shadow"><span>泡沫轴全身按摩</span></a>
+            </div>
+            <div class="img-ceng col-md-3">
+                <img src="images/media2.jpg" class="img-responsive">
+                <a href="#" class="shadow"><span>办公室肩颈放松</span></a>
+            </div>
+        </div>
+    </div>
+    <div class="container trainer">
+        <div class="weight-title">
+            <h4 class="text-center">瑜伽</h4>
+            <p class="white-line"></p>
+        </div>
+        <div class="row">
+            <div class="img-ceng col-md-4">
+                <img src="images/media5.jpg" class="img-responsive">
+                <a href="#" class="shadow"><span>瑜伽.基础力量</span></a>
+            </div>
+            <div class="img-ceng col-md-4">
+                <img src="images/media6.jpg" class="img-responsive">
+                <a href="#" class="shadow"><span>瑜伽.柔韧</span></a>
+            </div>
+            <div class="img-ceng col-md-4">
+                <img src="images/media1.jpg" class="img-responsive">
+                <a href="#" class="shadow"><span>瑜伽.平衡</span></a>
+            </div>
+
+        </div>
+    </div>
+    <div class="container trainer">
+        <div class="weight-title">
+            <h4 class="text-center">跑步</h4>
+            <p class="white-line"></p>
+        </div>
+        <div class="row">
+            <div class="img-ceng col-md-3">
+                <img src="images/media5.jpg" class="img-responsive">
+                <a href="#" class="shadow"><span>跑前热身</span></a>
+            </div>
+            <div class="img-ceng col-md-3">
+                <img src="images/media6.jpg" class="img-responsive">
+                <a href="#" class="shadow"><span>跑后拉伸</span></a>
+            </div>
+            <div class="img-ceng col-md-3">
+                <img src="images/media1.jpg" class="img-responsive">
+                <a href="#" class="shadow"><span>跑步稳定性提高</span></a>
+            </div>
+            <div class="img-ceng col-md-3">
+                <img src="images/media1.jpg" class="img-responsive">
+                <a href="#" class="shadow"><span>跑步核心训练</span></a>
+            </div>
+
+        </div>
+    </div>
+</div>
+<div class="footer">
+    <div class="container-fluid">
+        <a href="#">服务条款|</a>
+        <a href="#">隐私条款|</a>
+        <a href="#">社区规范|</a>
+        <a href="#">社区公约|</a>
+        <a href="#">加入我们|</a>
+        <a href="#">联系我们|</a>
+        <a href="#"><img src="images/twitterh.png" alt=""/></a>
+        <a href="#"><img src="images/vimeoh.png" alt=""/></a>
+        <a href="#"><img src="images/dribbbleh.png" alt=""/></a>
+        <a href="#"><img src="images/gplush.png" alt=""/></a>
+    </div>
+
+</div>
+<script src="js/jquery-1.11.3.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script>
+    (function () {
+        var s = document.createElement("script");
+        s.onload = function () {
+            bootlint.showLintReportForCurrentDocument([]);
+        };
+        s.src = "js/bootlint.js";
+        document.body.appendChild(s)
+    })();
+</script>
+</body>
+</html>                                                                                                                                                                                                                                                              
